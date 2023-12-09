@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cats</title>
+</head>
+<body>
+
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+  </thead>
+  <tbody>
+    <tr th:each="cat : ${cats}">
+      <td th:text="${cat.getId()}"></td>
+      <td th:text="${cat.getName()}"></td>
+      <td th:text="${cat.getAge()}"></td>
+    </tr>
+  </tbody>
+</table>>
+
+</body>
+</html>
