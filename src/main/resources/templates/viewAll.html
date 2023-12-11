@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" media="all"
+        href="../../styles/style.css" th:href="@{/styles/style.css}" />
     <title>Cats</title>
 </head>
 <body>
@@ -17,6 +19,8 @@
       <td th:text="${cat.getId()}"></td>
       <td th:text="${cat.getName()}"></td>
       <td th:text="${cat.getAge()}"></td>
+      <td><a href="/updateCat">Edit</a></td>
+      <td><a href="/deleteCat">Delete</a></td>
     </tr>
   </tbody>
 </table>>
