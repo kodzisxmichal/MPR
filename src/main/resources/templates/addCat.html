@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" media="all"
-          href="../../styles/style.css" th:href="@{/styles/style.css}" />
+          href="../static/styles/style.css" th:href="@{/styles/style.css}" />
     <title>Cats</title>
 </head>
 <body>
@@ -11,15 +11,16 @@
 <h2>Add Cat:</h2>
 
 <form action="#" th:object="${cat}" th:action="@{/addCat}" method="POST">
-    <label>Name:</label>
-    <input th:field="*{name}" type="input" name="name" required/>
+    <label>Name:</label><br/>
+    <input th:field="*{name}" type="input" name="name" placeholder="Enter Name" required/>
     <br/>
 
-    <label>Age:</label>
-    <input th:field="*{age}" type="input" name="age" required/>
+    <label>Age:</label><br/>
+    <input th:field="*{age}" type="input" name="age" placeholder="Enter Age" required/>
     <br/>
 
-    <button type="submit">Add</button>
+    <br/>
+    <button type="submit" name="submit">Add</button>
 </form>
 
 </body>
